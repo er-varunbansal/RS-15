@@ -8,6 +8,34 @@
     <script type="text/javascript" src="js/arial.js"></script>
     <script type="text/javascript" src="js/slideShow.js"></script>
     <script type="text/javascript" src="js/cuf_run.js"></script>
+    <style type='text/css'>
+            span2 {
+                text-decoration:underline;
+                color:blue;
+                cursor:pointer;
+            }
+    </style>
+    <script>
+            // show the given page, hide the rest
+            function showing(elementID) {
+                // try to find the requested page and alert if it's not found
+                var ele = document.getElementById(elementID);
+                if (!ele) {
+                    alert("no such element");
+                    return;
+                }
+
+                // get all pages, loop through them and hide them
+                var pages = document.getElementsByClassName('page');
+                for(var i = 0; i < pages.length; i++) {
+                    pages[i].style.display = 'none';
+                }
+
+                // then show the requested page
+                ele.style.display = 'block';
+            }
+        </script>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <script src="js/queryloader2.min.js" type="text/javascript"></script>
@@ -39,8 +67,6 @@
             <span>About us</span></a></li>
             <li><a href="events.html">Events<br />
             <span>in RS '15</span></a></li>
-            <li><a href="flyer.html">Flyer<br />
-            <span>Leaflets</span></a></li>
             <li><a href="schedule.html">Schedule<br />
             <span>Program Timings</span></a></li>
             <li class="active"><a href="register.html">Register<br />
@@ -66,27 +92,35 @@
     
     <div class="content_resize">
         <div class="mainbar">
-            <h2>Register<span> here</span></h2>
             <div class="article">
-            <p></br></p>
-            </div>
-            <div class="article">
-            <h3><span>Attend RS '15</span></h3><h5><a href="#">Click Here</a></h5>
-            </div>
-            <div class="article">
-            <h3><span>Poster session</span></h3><h5 align="justify"> Anyone who has a published work in national/international conference or journal can submit it as a poster in RS'15. (No more than 2 publications per person).</br></br><a href="#">Click Here</a></h5>
-            </div>
-            <div class="article">
-                <h3><span>Elevator Pitch</span></h3><h5 align="justify">Anyone who has published/unpublished work/idea/design and can showcase it to the audience. Work should be having some research impact and pure Engineering work will be rejected.</br></br><a href="#">Click Here</a></h5>
-            </div>
-            <div class="article">
-                <h3><span>Byldathon</span></h3><h5><a href="#">Click Here</a></h5>
-            </div>
-            <div class="article">
-                <h3><span>Electrocute</span></h3><h5><a href="#">Click Here</a></h5>
-            </div>
-            <div class="article">
-                <h3><span>Techquiz</span></h3><h5><a href="#">Click Here</a></h5>
+            <nav>
+                <ul class="pagination">
+                    <li><span onclick="showing('poster');">Poster Session</span></li>
+                    <li><span onclick="showing('elevator');">Elevator Pitch</span></li>
+                    <li><span onclick="showing('byld');">Byldathon</span></li>
+                    <li><span onclick="showing('electrocute');">Electrocute</span></li>
+                    <li><span onclick="showing('techquiz');">Techquiz</span></li>
+                    <li><span onclick="showing('attend');">Attend</span></li>
+                </ul>
+            </nav>
+                <div id="attend" class="page" style="display:none">
+                <iframe src="https://docs.google.com/forms/d/11wy7zT2k2BxdpKRtJuZs5D5gKziCXF7bqUQTcAiwcLI/viewform?embedded=true" width="650" height="590" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                </div>
+                <div id="poster" class="page" >
+                <iframe src="https://docs.google.com/forms/d/1jdWH76A8QXhpg0jxm_saUUNrCSFAQCkhupwQkYrp06g/viewform?embedded=true" width="650" height="960" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                </div>
+                <div id="elevator" class="page" style="display:none">
+                    <iframe src="https://docs.google.com/forms/d/1IFOlnUTA6MxPqFBs4JtUbDq8n8bsbAZCPR2zfOMOcl4/viewform?embedded=true" width="650" height="920" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                </div>
+                <div id="byld" class="page" style="display:none">
+                    <iframe src="https://docs.google.com/a/iiitd.ac.in/forms/d/1-5DyUVozgKzM0GsVklps3STtLOMBnEYzUody_fUNGK0/viewform?embedded=true" width="650" height="750" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                </div>
+                <div id="electrocute" class="page" style="display:none">
+                    <iframe src="https://docs.google.com/forms/d/1BvvFZDZ8ZpfZSBX6dDcjoyNfp7rVSF5RCGlS9HRX4Wc/viewform?embedded=true" width="650" height="850" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                </div>
+                <div id="techquiz" class="page" style="display:none">
+                    <iframe src="https://docs.google.com/a/iiitd.ac.in/forms/d/1zFZZXQ-8782dkzr26lX_2GHTs4argJ41_i4Qzk58w4A/viewform?embedded=true" width="650" height="650" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                </div>
             </div>
         </div>
         <div class="sidebar">
@@ -107,7 +141,6 @@
                 <ul class="sb_menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="events.html">Events</a></li>
-                    <li><a href="flyer.html">Flyer</a></li>
                     <li><a href="schedule">Schedule</a></li>
                     <li><a href="register.html">Register</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
