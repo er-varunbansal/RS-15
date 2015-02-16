@@ -23,6 +23,28 @@
             });
         });
     </script>
+    <script>
+        // show the given page, hide the rest
+        function showing(elementID) {
+            // try to find the requested page and alert if it's not found
+            var ele = document.getElementById(elementID);
+            if (!ele) {
+                alert("no such element");
+                return;
+            }
+
+            // get all pages, loop through them and hide them
+            var pages = document.getElementsByClassName('page');
+            for(var i = 0; i < pages.length; i++) {
+                pages[i].style.display = 'none';
+            }
+
+            // then show the requested page
+            ele.style.display = 'block';
+        }
+    </script>
+    
+
     <div class="logoright">
         <a target=blank href="http://iiitd.ac.in"><img src="images/logo2.jpg" height="150px" width="auto"></a>
     </div>
@@ -63,45 +85,76 @@
 <div class="content">
     <div class="content_resize">
         <div class="mainbar" >
-            <div class="col">
-                
-                <div class="col c1">
-                    <iframe width="250" height="200" src="https://www.youtube.com/embed/HJ4ukUGcVBQ" frameborder="1" allowfullscreen></iframe>    
-                </div>
-                <div class="col c1">
-                    <iframe width="250" height="200" src="https://www.youtube.com/embed/0a43LtRfGt8" frameborder="1" allowfullscreen></iframe>    
-                </div>
-                <div class="col c2">
-                    <img src="http://i.imgur.com/jrQiG3Bb.jpg" width="auto" height="150" alt="image" />    
-                </div>
-                <div class="col c2">
-                    <img src="http://i.imgur.com/UUs46Cib.jpg" width="auto" height="150" alt="image" />    
-                </div>
-                <div class="col c2">
-                    <img src="http://i.imgur.com/4KmCzcEb.jpg" width="auto" height="150" alt="image" />    
-                </div>
-                <div class="col c2">
-                    <img src="http://i.imgur.com/SGo8hoEb.jpg" width="auto" height="150" alt="image" />    
-                </div>
-                <div class="col c2">
-                    <img src="http://i.imgur.com/HAt2nHRb.jpg" width="auto" height="150" alt="image" />    
-                </div>
-                <div class="col c2">
-                    <img src="http://i.imgur.com/fB84nLJb.jpg" width="auto" height="150" alt="image" />    
-                </div>
-                <div class="col c2">
-                    <img src="http://i.imgur.com/JysALYYb.jpg" width="auto" height="150" alt="image" />    
-                </div>
-                <div class="col c2">
-                    <img src="http://i.imgur.com/0tCCyrMb.jpg" width="auto" height="150" alt="image" />    
-                </div>
-                <div class="col c2">
-                    <img src="http://i.imgur.com/UBjlbSrb.jpg" width="auto" height="150" alt="image" />    
+            <div class="article">
+            <nav>
+                <ul class="pager">
+                    <li><span onclick="showing('1');">1</span></li>
+                    <li><span onclick="showing('2');">2</span></li>
+                </ul>
+            </nav>
+            </div>
+
+            <div class="artilce">
+                <div id="1" class="page" >
+                    <div class="col" >
+                        <div class="col c1">
+                            <iframe width="250" height="200" src="https://www.youtube.com/embed/HJ4ukUGcVBQ" frameborder="1" allowfullscreen></iframe>    
+                        </div>
+                        <div class="col c1">
+                            <iframe width="250" height="200" src="https://www.youtube.com/embed/0a43LtRfGt8" frameborder="1" allowfullscreen></iframe>    
+                        </div>
+                        <div class="col c2">
+                            <img src="http://i.imgur.com/jrQiG3Bb.jpg" alt="image" />    
+                        </div>
+                        <div class="col c2">
+                            <img src="http://i.imgur.com/UUs46Cib.jpg" alt="image" />    
+                        </div>
+                        <div class="col c2">
+                            <img src="http://i.imgur.com/4KmCzcEb.jpg" alt="image" />    
+                        </div>
+                        <div class="col c2">
+                            <img src="http://i.imgur.com/SGo8hoEb.jpg" alt="image" />    
+                        </div>
+                        <div class="col c2">
+                            <img src="http://i.imgur.com/HAt2nHRb.jpg" alt="image" />    
+                        </div>
+                        <div class="col c2">
+                            <img src="http://i.imgur.com/fB84nLJb.jpg" alt="image" />    
+                        </div>
+                        <div class="col c2">
+                            <img src="http://i.imgur.com/JysALYYb.jpg" alt="image" />    
+                        </div>
+                        <div class="col c2">
+                            <img src="http://i.imgur.com/0tCCyrMb.jpg" alt="image" />    
+                        </div>
+                        <div class="col c2">
+                            <img src="http://i.imgur.com/UBjlbSrb.jpg" alt="image" />    
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="article" style="margin:15px 20px 2px 20px;">
-                <p><span class="butons"><a href="#" class="active">1</a> <a href="gallery2.html">2</a></span></p>
+            
+            <div class = "article">
+                <div id="2" class="page" style="display:none">
+                    <div class="col">
+
+                        <div class="col c2">
+                            <img src="http://i.imgur.com/aj8Gwzkb.jpg" alt="image" />    
+                        </div>
+                        <div class="col c2">
+                            <img src="http://i.imgur.com/Eog4ymQb.jpg" alt="image" />    
+                        </div>
+                        <div class="col c2">
+                            <img src="http://i.imgur.com/l3ZSXucb.jpg" alt="image" />    
+                        </div>
+                    </div>
+                </div>
             </div>
+            
+            
+            
+            
+            
         </div>
         <div class="sidebar">
             

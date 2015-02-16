@@ -62,7 +62,7 @@ a.rm, a.com { margin-left:8px; padding:9px 12px; background:url(images/a_bg.gif)
 .content .mainbar .c2 { padding:0px 0 0 0 ; margin:10px 10px 10px 10px;height:150px;width: 150px;}
 .content .mainbar .c3 { padding:10px 0 0 0; height:150px;width: 150px;}
 .content .mainbar .c1 img{ padding:10px 0 20 0; height:150px; width: 150px;}
-.content .mainbar .c2 img{ padding:10px 0 20 0; height:150px; width: 150px;}
+.content .mainbar .c2 img{ padding:10px 0 20 0; height:180px; width: 180px;}
 .content .mainbar .c3 img{ padding:10px 0 20 0; height:150px; width: 150px;}
 
 .content .mainbar .article { margin:0 0 2px 0;  padding:0px 20px;  width:650px;}
