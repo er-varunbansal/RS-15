@@ -23,28 +23,6 @@
             });
         });
     </script>
-    <script>
-        // show the given page, hide the rest
-        function showing(elementID) {
-            // try to find the requested page and alert if it's not found
-            var ele = document.getElementById(elementID);
-            if (!ele) {
-                alert("no such element");
-                return;
-            }
-
-            // get all pages, loop through them and hide them
-            var pages = document.getElementsByClassName('page');
-            for(var i = 0; i < pages.length; i++) {
-                pages[i].style.display = 'none';
-            }
-
-            // then show the requested page
-            ele.style.display = 'block';
-        }
-    </script>
-    
-
     <div class="logoright">
         <a target=blank href="http://iiitd.ac.in"><img src="images/logo2.jpg" height="150px" width="auto"></a>
     </div>
@@ -52,9 +30,9 @@
     <div class="logoleft">
         <a href="index.html"><img src="images/rslogowithquote.jpg" height="150px" width="auto"></a>
     </div>
+
 </head>
 <body>
-    
     
     <div class="menu_nav">
         <ul>
@@ -68,6 +46,10 @@
             <span>To attend RS '15</span></a></li>
             <li class="active"><a href="gallery.html">Gallery<br />
             <span>RS '14</span></a></li>
+            <li><a href="team.html">Team<br />
+            <span>Organisors</span></a></li>
+            <li><a href="faq.html">FAQs<br />
+            <span>questions</span></a></li>
             <li><a href="contact.html" class="last">Contact Us<br />
             <span>Call us now</span></a></li>
         </ul> 
@@ -77,88 +59,46 @@
 <div class="header">
 <div class="header_resize">
     
-
     <div class="clr"></div>
+    
 
 </div>
 <div class="clr"></div>
 <div class="content">
+    
     <div class="content_resize">
-        <div class="mainbar" >
+        <div class="mainbar">
+            <h2>Gallery</h2>
             <div class="article">
-            <nav>
-                <ul class="pager">
-                    <li><span onclick="showing('1');">1</span></li>
-                    <li><span onclick="showing('2');">2</span></li>
-                </ul>
-            </nav>
-            </div>
-
-            <div class="artilce">
-                <div id="1" class="page" >
-                    <div class="col" >
+            
+                <div class="col" >
                         <div class="col c1">
                             <iframe width="250" height="200" src="https://www.youtube.com/embed/HJ4ukUGcVBQ" frameborder="1" allowfullscreen></iframe>    
                         </div>
                         <div class="col c1">
                             <iframe width="250" height="200" src="https://www.youtube.com/embed/0a43LtRfGt8" frameborder="1" allowfullscreen></iframe>    
                         </div>
-                        <div class="col c2">
-                            <img src="http://i.imgur.com/jrQiG3Bb.jpg" alt="image" />    
-                        </div>
-                        <div class="col c2">
-                            <img src="http://i.imgur.com/UUs46Cib.jpg" alt="image" />    
-                        </div>
-                        <div class="col c2">
-                            <img src="http://i.imgur.com/4KmCzcEb.jpg" alt="image" />    
-                        </div>
-                        <div class="col c2">
-                            <img src="http://i.imgur.com/SGo8hoEb.jpg" alt="image" />    
-                        </div>
-                        <div class="col c2">
-                            <img src="http://i.imgur.com/HAt2nHRb.jpg" alt="image" />    
-                        </div>
-                        <div class="col c2">
-                            <img src="http://i.imgur.com/fB84nLJb.jpg" alt="image" />    
-                        </div>
-                        <div class="col c2">
-                            <img src="http://i.imgur.com/JysALYYb.jpg" alt="image" />    
-                        </div>
-                        <div class="col c2">
-                            <img src="http://i.imgur.com/0tCCyrMb.jpg" alt="image" />    
-                        </div>
-                        <div class="col c2">
-                            <img src="http://i.imgur.com/UBjlbSrb.jpg" alt="image" />    
-                        </div>
-                    </div>
                 </div>
             </div>
-            
             <div class = "article">
-                <div id="2" class="page" style="display:none">
-                    <div class="col">
-
-                        <div class="col c2">
-                            <img src="http://i.imgur.com/aj8Gwzkb.jpg" alt="image" />    
-                        </div>
-                        <div class="col c2">
-                            <img src="http://i.imgur.com/Eog4ymQb.jpg" alt="image" />    
-                        </div>
-                        <div class="col c2">
-                            <img src="http://i.imgur.com/l3ZSXucb.jpg" alt="image" />    
-                        </div>
-                    </div>
-                </div>
+                <iframe class="imgur-album" width="610px" height="500px" frameborder="0" src="http://imgur.com/a/c7ZAf/embed"></iframe>
             </div>
-            
-            
-            
             
             
         </div>
         <div class="sidebar">
-            
-             <div class="gadget">
+            <!--
+            <div class="search">
+                <form id="form" name="form" method="post" action="">
+                    <span>
+                    <input name="q" type="text" class="keywords" id="textfield" maxlength="50" value="Search..." />
+                    </span>
+                    <input name="b" type="image" src="images/search.gif" class="button" />
+                </form>
+            </div>
+            -->
+            <!--/search -->
+            <div class="gadget">
                 <h2 style="color:#CFCFCF">Links</h2>
                 <div class="clr"></div>
                 <ul class="sb_menu">
@@ -167,6 +107,8 @@
                     <li><a href="schedule">Schedule</a></li>
                     <li><a href="register.html">Register</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
                     <li><a href="contact.html">Contact us</a></li>
                 </ul>
             </div>
@@ -186,12 +128,9 @@
             </div>
             
                 <div class="clr"></div>
-
-            <a class="twitter-timeline" href="https://twitter.com/rsIIITD" data-widget-id="565027896532541440">Tweets by @rsIIITD</a>
+                <a class="twitter-timeline" href="https://twitter.com/rsIIITD" data-widget-id="565027896532541440">Tweets by @rsIIITD</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-            </div>
-            
+        </div>           
         </div>
         <div class="clr"></div>
     </div>
@@ -212,18 +151,17 @@
         </div>
         <div class="col c2">
             <h2><span>Location</span></h2>
-
 <a href="https://goo.gl/maps/uwJY5"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3504.7911696176247!2d77.272637!3d28.545996000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3e564daac1d%3A0x2c582e340e7bc556!2sIIIT+Delhi!5e0!3m2!1sen!2sin!4v1423553812715" width="250" height="200" frameborder="0" style="border:0"></iframe></a>
-
         </div>
         <div class="col c3">
+            <!--<h2><span>Facebook</span></h2>-->
             <p><iframe src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fiiitdelhiresearchshowcase&amp;width=250&amp;height=258&amp;colorscheme=dark&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:250px; height:258px;" allowTransparency="true"></iframe></p>
         </div>
         <div class="clr"></div>
     </div>
     <div class="footer">
         <p class="lf">
-            <a href="http://sites.iiitd.ac.in/rs12/">RS '12</a> | 
+            <a href="http://sites.iiitd.ac.in/rs12"/>RS '12</a> | 
             <a href="http://sites.iiitd.ac.in/rs13/">RS '13</a> | 
             <a href="http://sites.iiitd.ac.in/rs14/">RS '14</a>
         </p>

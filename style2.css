@@ -57,11 +57,12 @@ a.rm, a.com { margin-left:8px; padding:9px 12px; background:url(images/a_bg.gif)
 .content .mainbar { margin:0; float:right;}
 .content .mainbar img { float:left; padding:4px; margin:0 10px 0 0; background-color:#dfdfdf;}
 
-.content .mainbar .col { margin:0px 0 -50px 0;  padding:10px 20px 0px 20px;float:left;width: 610px}
-.content .mainbar .c1 { padding:0px 0 0 0;  margin:0px 10px 0px 10px; height:250px; width: 250px;}
-.content .mainbar .c2 { padding:0px 0 0 0 ; margin:10px 10px 10px 10px;height:150px;width: 150px;}
+.content .mainbar .col { margin:0px 0 10px 0px;  padding:10px 20px 0px 20px;float:left;width: 610px; }
+.content .mainbar .c1 { padding:0px 0 0 0;  margin:0px 0px 0px 0px; height:285px; width: 285px;}
+.content .mainbar .c2 { padding:0px 0 10px 0 ; margin:10px 10px 10px 10px;height:400px;width: 250px;}
+.content .mainbar .c3 { padding:0px 0 0 0 ; margin:0px 10px 10px 5px;height:150px;width: 150px;}
 .content .mainbar .c3 { padding:10px 0 0 0; height:150px;width: 150px;}
-.content .mainbar .c1 img{ padding:10px 0 20 0; height:150px; width: 150px;}
+.content .mainbar .c1 img{ padding:10px 0 20 0; height:200px; width: 200px;}
 .content .mainbar .c2 img{ padding:10px 0 20 0; height:180px; width: 180px;}
 .content .mainbar .c3 img{ padding:10px 0 20 0; height:150px; width: 150px;}
 
