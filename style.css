@@ -34,7 +34,7 @@ a.rm, a.com { margin-left:8px; padding:9px 12px; background:url(images/a_bg.gif)
 /* menu */
 
 .menu_nav { margin:0px 0 0 0px; padding:0px 0 0 0; float:right; width:100%;background: #333333;position: top-fixed; z-index: 1; opacity: 1}
-.menu_nav ul { list-style:none; margin:0 0 0 187px; width:970px}
+.menu_nav ul { list-style:none; margin:0 0 0 187px; width:970}
 .menu_nav li { float:left; padding:0 3px; }
 .menu_nav li a { border-right:0px solid #000; font:normal 19px Arial, Helvetica, sans-serif; color:#cfcfcf; display:block; float:left; padding:10px 20px; }
 .menu_nav li a span { font:normal 11px Arial, Helvetica, sans-serif; color:#cfcfcf;  }
