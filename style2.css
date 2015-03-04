@@ -12,7 +12,7 @@ html,
 .clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
 .logoleft { padding:0px 0px 0px 175px;  auto; width:100%; float:center;}
 .logoleft img { float:left; margin:0px 10px 0px 0; }
-.logoright{ padding:0px 175px 0px 0; margin:0 auto; width:50px; float:right;}
+.logoright{ padding:10px 175px 0px 0; margin:0 auto; width:50px; float:right;}
 .logoright img { float:right; margin:0px 10px 0 0; }
 .logocenter{ padding:0px 0 0px 0; margin:0 auto; width:60%; position:left;}
 .logocenter img { float:center; margin:0px 10px 0 0; }
