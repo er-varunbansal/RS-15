@@ -9,9 +9,9 @@ body { margin:0; padding:0; width:100%; color:#9a9a9a; font:normal 12px/1.8em Ar
 html,
 .main { padding:0; padding:0 0 0 0px; background:#fff url(images/main_bg2.jpg) top repeat:none;}
 .clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
-.logoleft { padding:0px 0px 0px 175px;  auto; width:100%; float:center;}
+.logoleft { padding:0px 0px 0px 175px; margin:auto; width:100%; float:center;}
 .logoleft img { float:left; margin:0px 10px 0px 0; }
-.logoright{ padding:10px 175px 0px 0; margin:0 auto; width:50px; float:right;}
+.logoright{ padding:10px 175px 0px 0; margin:0 auto; width:450px; float:right;position:relative}
 .logoright img { float:right; margin:0px 10px 0 0; }
 .logocenter{ padding:0px 0 0px 0; margin:0 auto; width:60%; position:left;}
 .logocenter img { float:center; margin:0px 10px 0 0; }
@@ -47,7 +47,7 @@ a.rm, a.com { margin-left:8px; padding:9px 12px; background:url(images/a_bg.gif)
 
 /* content */
 .content { padding:10px 0 0 0;}
-.content_resize { margin:0 auto; padding:20px 0 0 0; width:970px;}
+.content_resize { margin:0 auto; padding:20px 0 0 0; width:90%; min-width:970px; max-width:900px}
 .content .mainbar { margin:0; float:right;}
 .content .mainbar img { float:left; padding:4px; margin:0 10px 0 0; background-color:#dfdfdf;}
 
